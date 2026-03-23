@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sherif-sans;
+}
+
+.menu-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0000000a;
+  border-bottom: 1px solid #00000033;
+}
+
+.logo {
+  width: 200px;
+}
+
+.options {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 30px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #000;
+}
+
+.options li:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.search-box {
+  display: flex;
+  background-color: #00000011;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-box button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: #2e003b;
+}
+
+.search-box:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.login-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 22.5px;
+  
+}
+
+.login-btn:hover {
+  transition: 0.2s ease-in-out;
+  border: 1px solid #00000031;
+  box-shadow: 0 0 5px #000;
+  transform: scale(1.05);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #00000033;
+}
+
+.header-img {
+  height: 50vh;
+  width: 45%;
+  background-image: url(../Imagens/tenis1.jpeg);
+  background-position: center;
+  background-size: contain;
+}
+
+.header-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.header-txt-disclaimer {
+  background-image: linear-gradient(to right, #7318c9, #55006e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 3em;
+  width: 12.5em;
+  border-radius: 24px;
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #7318c9, #55006e);
+}
+
+.header-btn:hover {
+  transition: 0.2s linear;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #4e006194;
+}
+
+.header-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.itens-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: #0000000a;
+}
+
+.card-itens {
+  background: #ffffff;
+  height: 220px;
+  width: 220px;
+  margin-top: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-itens:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 15px #0000003a;
+  transform: scale(1.05);
+}
+
+.card-itens img {
+  height: 180px;
+  width: 180px;
+  padding: 5px;
+}
+
+.brand-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: #0000000a;
+}
+
+.card-brand {
+  background: #ffffff;
+  height: 100px;
+  width: 100px;
+  margin-top: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.prod-section {
+  background: #0000000a;
+}
+
+.prod-section h1 {
+  padding: 60px;
+  text-align: center;
+}
+
+.card-prod {
+  padding: 50px;
+  height: 90vh;
+  margin-left: 20%;
+  width: 60%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.prods {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000;
+}
+
+.contato {
+  background: #0000000a;
+  padding: 100px;
+}
+
+.texto-centro {
+  color: #000000;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.texto-centro h4 {
+  font-size: 22px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40%;
+  padding: 50px;
+  border-radius: 8px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.966);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0);
+  margin-left: 30%;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cpf {
+  margin-bottom: 45px;
+}
+
+.campo label {
+  width: 180px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  display: flex;
+}
+
+.campo input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.ddd {
+  width: 78px;
+}
+
+label p {
+  margin-left: 4px;
+  color: #d43737;
+}
+
+.letra {
+  width: 180px;
+  color: white;
+  font-weight: bold;
+}
+
+.apertar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #000000;
+  width: 45%;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}

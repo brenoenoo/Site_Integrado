@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-top">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="Imagens/BLVCKOUT.png" alt="BLVCKOUT" class="logo" />
+          </a>
+        </div>
+
+        <nav class="menu">
+          <ul class="options">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Marcas</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+
+        <form action="/buscar" method="get" class="search-box">
+          <input type="text" name="q" placeholder="Pesquisar..." />
+          <button type="submit">Buscar</button>
+        </form>
+
+        <div class="login-btn">Login</div>
+      </div>
+
+      <section class="header-section">
+        <div class="header-txt">
+          <div class="header-txt-disclaimer">
+            <h1>Nike Air Max 95</h1>
+            <h3>Disponível na BLVCKOUT!</h3>
+          </div>
+          <div class="header-btn">
+            <a href="#">Garanta já o seu! ⟶</a>
+          </div>
+        </div>
+        <div class="header-img"></div>
+      </section>
+    </header>
+
+    <section class="itens-section">
+      <div class="card-itens">
+        <img src="Imagens/tenis2.webp" alt="Sneaker" />Sneakers
+      </div>
+      <div class="card-itens">
+        <img src="Imagens/camisa1.webp" alt="Streetwear" />Streetwear
+      </div>
+      <div class="card-itens">
+        <img src="Imagens/bone1.webp" alt="Bonés" />Bonés
+      </div>
+      <div class="card-itens">
+        <img src="Imagens/relogio1.jpg" alt="Relógios" />Relógios
+      </div>
+      <div class="card-itens">
+        <img src="Imagens/mochila1.webp" alt="Mochilas" />Mochilas
+      </div>
+    </section>
+
+    <section class="brand-section">
+      <div class="card-brand">
+        <img src="" alt="" />
+      </div>
+      <div class="card-brand">
+        <img src="" alt="" />
+      </div>
+      <div class="card-brand">
+        <img src="" alt="" />
+      </div>
+      <div class="card-brand">
+        <img src="" alt="" />
+      </div>
+      <div class="card-brand">
+        <img src="" alt="" />
+      </div>
+    </section>
+
+    <section class="prod-section">
+      <h1>Lançamentos</h1>
+      <div class="card-prod">
+        <div class="prods">1</div>
+        <div class="prods">2</div>
+        <div class="prods">3</div>
+        <div class="prods">4</div>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <div class="texto-centro">
+        <h3>Página de Contato</h3>
+        <h4>Faça seu cadastro para contato</h4>
+      </div>
+
+      <form method="post" enctype="multipart/form-data">
+        <section class="card">
+          <section class="campo">
+            <label
+              >Nome
+              <p>*</p></label
+            >
+            <input type="text" placeholder="Nome completo" />
+          </section>
+
+          <section class="campo">
+            <label
+              >Email
+              <p>*</p></label
+            >
+            <input type="email" placeholder="Email" />
+          </section>
+
+          <section class="campo">
+            <label
+              >Telefone
+              <p>*</p></label
+            >
+            <span class="fone"
+              ><input type="number" placeholder="(DDD)" class="ddd" /> -
+              <input type="number" placeholder="Telefone" class="fone"
+            /></span>
+          </section>
+
+          <section class="campo cpf">
+            <label
+              >CPF
+              <p>*</p></label
+            >
+            <input type="number" placeholder="CPF" />
+          </section>
+          <div class="apertar">
+            <button
+              type="submit"
+              onclick="alert('Currículo enviado com sucesso!!')"
+              class="button"
+            >
+              Enviar
+            </button>
+            <button
+              type="reset"
+              onclick="alert('Formulário limpo com sucesso!!')"
+              class="button"
+            >
+              Limpar
+            </button>
+          </div>
+        </section>
+      </form>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>
