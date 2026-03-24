@@ -4,32 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>BLVCKOUT</title>
   </head>
   <body>
     <header>
       <div class="menu-top">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="Imagens/BLVCKOUT.png" alt="BLVCKOUT" class="logo" />
-          </a>
-        </div>
+        <div class="header-logo">BL<span>V</span>CKOUT</div>
 
         <nav class="menu">
           <ul class="options">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Categorias</a></li>
-            <li><a href="#">Marcas</a></li>
+            <li><a href="#carrossel">Marcas</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
         </nav>
 
-        <form action="/buscar" method="get" class="search-box">
-          <input type="text" name="q" placeholder="Pesquisar..." />
-          <button type="submit">Buscar</button>
-        </form>
-
-        <div class="login-btn">Login</div>
+        <div class="actions">
+          <form action="/buscar" method="get" class="search-box">
+            <input type="text" name="q" placeholder="Buscar produtos..." />
+            <button type="submit">Buscar</button>
+          </form>
+          <span class="icon"><i class="bi bi-person-fill"></i></span>
+          <span class="icon"><i class="bi bi-cart4"></i></span>
+        </div>
       </div>
 
       <section class="header-section">
@@ -48,47 +50,197 @@
 
     <section class="itens-section">
       <div class="card-itens">
-        <img src="Imagens/tenis2.webp" alt="Sneaker" />Sneakers
+        <div class="img-box">
+          <img src="Imagens/tenis2.webp" alt="Sneaker" class="img-default" />
+          <img src="Imagens/tenis3.webp" alt="Sneaker" class="img-hover" />
+        </div>
+        <p>Sneakers</p>
       </div>
+
       <div class="card-itens">
-        <img src="Imagens/camisa1.webp" alt="Streetwear" />Streetwear
+        <div class="img-box">
+          <img
+            src="Imagens/camisa1.webp"
+            alt="Streetwear"
+            class="img-default"
+          />
+          <img src="Imagens/camisa2.webp" alt="Streetwear" class="img-hover" />
+        </div>
+        <p>Streetwear</p>
       </div>
+
       <div class="card-itens">
-        <img src="Imagens/bone1.webp" alt="Bonés" />Bonés
+        <div class="img-box">
+          <img src="Imagens/bone1.webp" alt="Bonés" class="img-default" />
+          <img src="Imagens/bone2.jfif" alt="Bonés" class="img-hover" />
+        </div>
+        <p>Bonés</p>
       </div>
+
       <div class="card-itens">
-        <img src="Imagens/relogio1.jpg" alt="Relógios" />Relógios
+        <div class="img-box">
+          <img src="Imagens/relogio1.jpg" alt="Relógios" class="img-default" />
+          <img src="Imagens/relogio2.webp" alt="Relógios" class="img-hover" />
+        </div>
+        <p>Relógios</p>
       </div>
+
       <div class="card-itens">
-        <img src="Imagens/mochila1.webp" alt="Mochilas" />Mochilas
+        <div class="img-box">
+          <img src="Imagens/mochila1.webp" alt="Mochilas" class="img-default" />
+          <img src="Imagens/mochila2.webp" alt="Mochilas" class="img-hover" />
+        </div>
+        <p>Mochilas</p>
       </div>
     </section>
 
     <section class="brand-section">
-      <div class="card-brand">
-        <img src="" alt="" />
-      </div>
-      <div class="card-brand">
-        <img src="" alt="" />
-      </div>
-      <div class="card-brand">
-        <img src="" alt="" />
-      </div>
-      <div class="card-brand">
-        <img src="" alt="" />
-      </div>
-      <div class="card-brand">
-        <img src="" alt="" />
+      <div class="brand-container" id="carrossel">
+        <div class="card-brand">
+          <img src="Imagens/Marcas/nike.webp" alt="Nike" />
+          <span>Nike</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/adidas.webp" alt="Adidas" />
+          <span>Adidas</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/yzy.webp" alt="Yeezy" />
+          <span>Yeezy</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/chrome.webp" alt="Chrome Hearts" />
+          <span>Chrome Hearts</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/bape.webp" alt="Bape" />
+          <span>Bape</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/jordan.webp" alt="Jordan" />
+          <span>Jordan</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/nb.webp" alt="New Balance" />
+          <span>New Balance</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/tscott.webp" alt="Travis Scott" />
+          <span>Travis Scott</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/sufgang.webp" alt="Sufgang" />
+          <span>Sufgang</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/off_white.webp" alt="Off-White" />
+          <span>Off-White</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/trapstar.webp" alt="Trapstar" />
+          <span>Trapstar</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/lv.webp" alt="Louis Vuitton" />
+          <span>Louis Vuitton</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/hellstar.webp" alt="Hellstar" />
+          <span>Hellstar</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/timberland.webp" alt="Timberland" />
+          <span>Timberland</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/piet.webp" alt="Piet" />
+          <span>Piet</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/corteiz.webp" alt="Corteiz" />
+          <span>Corteiz</span>
+        </div>
+
+        <div class="card-brand">
+          <img src="Imagens/Marcas/Supreme.webp" alt="Supreme" />
+          <span>Supreme</span>
+        </div>
       </div>
     </section>
 
     <section class="prod-section">
-      <h1>Lançamentos</h1>
-      <div class="card-prod">
-        <div class="prods">1</div>
-        <div class="prods">2</div>
-        <div class="prods">3</div>
-        <div class="prods">4</div>
+      <h2>LANÇAMENTO</h2>
+
+      <div class="prod-container">
+        <div class="product-card">
+          <div class="img-box prod">
+            <img src="Imagens/prod1.webp" alt="" class="img-default"/>
+            <img src="Imagens/prod6.webp" alt="" class="img-hover"/>
+          </div>
+
+          <div class="stars">★★★★★<span>(256)</span></div>
+          <h3>Nike Air Max 95 Big Bubble Granite</h3>
+          <p class="price">R$ 2.199,99</p>
+        </div>
+
+        <div class="product-card">
+          <div class="img-box prod">
+            <img src="Imagens/prod2.webp" alt="" class="img-default"/>
+            <img src="Imagens/prod7.webp" alt="" class="img-hover"/>
+          </div>
+
+          <div class="stars">★★★★★<span>(67)</span></div>
+          <h3>Calça Cipher Plague Crystal Jeans Black</h3>
+          <p class="price">R$ 649,90</p>
+        </div>
+
+        <div class="product-card">
+          <div class="img-box prod">
+            <img src="Imagens/prod3.webp" alt="" class="img-default"/>
+            <img src="Imagens/prod8.webp" alt="" class="img-hover"/>
+          </div>
+
+          <div class="stars">★★★★★<span>(112)</span></div>
+          <h3>Boné Hellstar Baseball Fitted Black</h3>
+          <p class="price">R$ 1.299,99</p>
+        </div>
+
+        <div class="product-card">
+          <div class="img-box prod">
+            <img src="Imagens/prod4.webp" alt="" class="img-default"/>
+            <img src="Imagens/prod9.webp" alt="" class="img-hover"/>
+          </div>
+
+          <div class="stars">★★★★★<span>(482)</span></div>
+          <h3>Camiseta Nike Total 90 Black Green Spark Opti Yellow</h3>
+          <p class="price">R$ 365,00</p>
+        </div>
+
+        <div class="product-card">
+          <div class="img-box prod">
+            <img src="Imagens/prod5.webp" alt="" class="img-default"/>
+            <img src="Imagens/prod10.webp" alt="" class="img-hover"/>
+          </div>
+
+          <div class="stars">★★★★★<span>(482)</span></div>
+          <h3>PodPah x Oakley Óculos Plantaris Prizm Ruby Grey</h3>
+          <p class="price">R$ 1.600,00</p>
+        </div>
       </div>
     </section>
 
@@ -117,21 +269,21 @@
           </section>
 
           <section class="campo">
-            <label
-              >Telefone
-              <p>*</p></label
-            >
-            <span class="fone"
-              ><input type="number" placeholder="(DDD)" class="ddd" /> -
-              <input type="number" placeholder="Telefone" class="fone"
-            /></span>
+            <label>
+              Telefone
+              <p>*</p>
+            </label>
+            <span class="fone">
+              <input type="number" placeholder="(DDD)" class="ddd" /> -
+              <input type="number" placeholder="Telefone" class="fone" />
+            </span>
           </section>
 
           <section class="campo cpf">
-            <label
-              >CPF
-              <p>*</p></label
-            >
+            <label>
+              CPF
+              <p>*</p>
+            </label>
             <input type="number" placeholder="CPF" />
           </section>
           <div class="apertar">
@@ -155,5 +307,13 @@
     </section>
 
     <footer></footer>
+    <script>
+      const carousel = document.getElementById("carrossel");
+
+      carousel.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        carousel.scrollLeft += e.deltaY;
+      });
+    </script>
   </body>
 </html>
