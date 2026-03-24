@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Poppins";
+  scroll-behavior: smooth;
+}
+
+.menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0000000a;
+  border-bottom: 1px solid #7318c952;
+  padding: 0 60px;
+}
+
+.header-logo {
+  height: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.header-logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-logo span {
+  color: #7318c9;
+  font-size: 18px;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.options {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 30px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #000;
+}
+
+.options li:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon a {
+  color: #000;
+}
+
+.icon a:hover {
+  transition: 0.3s;
+  color: #7c3aed;
+}
+
+.search-box {
+  display: flex;
+  background-color: #00000011;
+  border-radius: 20px;
+  width: 220px;
+  margin-right: 45px;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  background: transparent;
+  width: 220px;
+  outline: none;
+}
+
+.search-box button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(to right, rgb(115, 24, 201), #55006e);
+}
+
+.search-box:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    border: 1px solid red;
+    height: 50vh;
+    width: 40%;
+}
+
+.login-card {
+    border: 1px solid blue;
+    height: 50vh;
+    width: 50%;
+}
+
+.login-form {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.login-form span {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.login-form input {
+    width: 270px;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: #00000011;
+}
+
+.login-form input:focus {
+    transform: scale(1.05);
+}
+
+.login-btn {
+    margin-top: 30px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  border-top: 1px solid #7318c952;
+  border-bottom: 1px solid #7318c952;
+  padding: 20px 25px;
+}
+
+.footer-col {
+  min-height: 100px;
+  text-align: center;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 10px;
+  text-align: left;
+}
+
+.footer-col ul a {
+  text-decoration: none;
+  color: #000000a9;
+}
+
+.footer-col ul a:hover {
+  color: #000;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-card {
+  width: 48px;
+  height: 34px;
+  background-size: auto 100%;
+  margin-right: 3px;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.master {
+  background-image: url(../Imagens/mastercard.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.elo {
+  background-image: url(../Imagens/elo.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.visa {
+  background-image: url(../Imagens/visa.svg.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.pix {
+  background-image: url(../Imagens/pix.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+
+.footer-row {
+  padding: 15px;
+  text-align: center;
+  background-color: #0000000a;
+}
+
+.footer-row p {
+  color: #000000a9;
+  font-size: 12px;
+}
+
+.footer-row span {
+  font-weight: 600;
+}
