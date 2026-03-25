@@ -27,8 +27,8 @@
 }
 
 .header-logo a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .header-logo span {
@@ -114,47 +114,46 @@
   transform: scale(1.05);
 }
 
-.product-page {
+.prod-main {
   padding: 40px 60px;
   display: flex;
   justify-content: center;
 }
 
 /* LAYOUT */
-.product-container {
+.prod-container {
   display: flex;
   gap: 60px;
   align-items: center;
   justify-content: center;
 }
 /* GALERIA */
-.product-gallery {
+.prod-gallery {
   display: flex;
   gap: 20px;
   align-items: center;
   max-width: 600px;
 }
-.thumbs {
+.mini-img {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.thumbs img {
+.mini-img img {
   width: 70px;
   height: 70px;
   object-fit: cover;
 }
 
-.main-image img {
+.main-img img {
   width: 100%;
   max-width: 500px;
   height: auto;
   object-fit: contain;
 }
 
-/* INFO */
-.product-info {
+.prod-info {
   max-width: 400px;
 }
 
@@ -178,7 +177,6 @@
   margin-bottom: 20px;
 }
 
-/* SEÇÕES */
 .section {
   margin-bottom: 20px;
 }
@@ -191,8 +189,7 @@
   margin-top: 10px;
 }
 
-/* TAMANHOS */
-.size-header {
+.size-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -216,7 +213,6 @@
   transition: 0.2s ease-in-out;
 }
 
-/* BOTÃO */
 .btn-buy {
   width: 100%;
   padding: 15px;
@@ -252,13 +248,18 @@
 
 .cep-box button {
   padding: 12px 20px;
-  background: linear-gradient(to right, #7318c9, #55006e);
+  background: #000;
   color: white;
   border: none;
   cursor: pointer;
 }
 
-.description p {
+.cep-box button:hover {
+  transition: 0.2s;
+  background: linear-gradient(to right, #7318c9, #55006e);
+}
+
+.desc p {
   font-size: 14px;
   margin-bottom: 10px;
   color: #333;
