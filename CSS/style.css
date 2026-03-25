@@ -351,6 +351,11 @@
   transform: translateY(-8px);
 }
 
+.product-card a{
+  text-decoration: none;
+  color: #000;
+}
+
 .stars {
   font-size: 14px;
   margin-bottom: 10px;

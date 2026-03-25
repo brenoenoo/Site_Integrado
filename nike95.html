@@ -41,8 +41,8 @@
         <div class="prod-container">
             <div class="prod-gallery">
                 <div class="mini-img">
-                    <img src="Imagens/prod1.webp">
-                    <img src="Imagens/prod6.webp">
+                    <img src="Imagens/prod1.webp" onclick="trocarImagem(this)">
+                    <img src="Imagens/prod6.webp" onclick="trocarImagem(this)">
                 </div>
 
                 <div class="main-img">
@@ -51,7 +51,7 @@
             </div>
 
             <div class="prod-info">
-                <p class="indicador">Home | Sneakers</p>
+                <p class="indicador"><a href="index.html">Home</a> | <a href="sneakers.html">Sneakers</a></p>
 
                 <h1>Nike Air Max 95 Big Bubble Granite</h1>
 
@@ -64,16 +64,16 @@
                 </div>
 
                 <div class="section">
-                    <div class="size-top">
+                    <div class="size-title">
                         <p>Tamanho</p>
                     </div>
 
                     <div class="sizes">
-                        <span>38</span>
-                        <span>39</span>
-                        <span>40</span>
-                        <span>41</span>
-                        <span>42</span>
+                        <button>38</button>
+                        <button>39</button>
+                        <button>40</button>
+                        <button>41</button>
+                        <button>42</button>
                     </div>
                 </div>
 
@@ -158,5 +158,17 @@
         </p>
       </div>
     </footer>
+
+    <script>
+        function trocarImagem(el) {
+            document.getElementById("main-img").src = el.src;
+
+            document.querySelectorAll(".mini-img img").forEach(img => {
+                img.classList.remove("active");
+            });
+
+            el.classList.add("active");
+        }
+    </script>
   </body>
 </html>
