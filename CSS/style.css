@@ -474,6 +474,7 @@ label p {
   border-top: 1px solid #7318c952;
   border-bottom: 1px solid #7318c952;
   padding: 20px 25px;
+  background-color: #0000000a;
 }
 
 .footer-col {
