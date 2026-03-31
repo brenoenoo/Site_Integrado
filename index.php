@@ -1,3 +1,6 @@
+<?php
+include 'data.php';
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -8,52 +11,31 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <title>BLVCKOUT</title>
+    <title><?php echo $nome_loja ?></title>
   </head>
   <body>
-    <header>
-      <div class="menu-top">
-        <div class="header-logo">
-          <a href="index.html">BL<span>V</span>CKOUT</a>
+    
+    <?php
+      require "./partials/header.php";
+    ?>
+
+    <section class="header-section">
+      <div class="header-txt">
+        <div class="header-txt-disclaimer">
+          <h1>Nike Air Max 95</h1>
+          <h3>Disponível na BLVCKOUT!</h3>
         </div>
-
-        <nav class="menu">
-          <ul class="options">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#carrossel">Marcas</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-
-        <div class="actions">
-          <form action="/buscar" method="get" class="search-box">
-            <input type="text" name="q" placeholder="Buscar produtos..." />
-            <button type="submit">Buscar</button>
-          </form>
-          <span class="icon"><a href="login.html"><i class="bi bi-person-fill"></i></a></i></span>
-          <span class="icon"><a href="#"><i class="bi bi-cart4"></i></a></span>
+        <div class="header-btn">
+          <a href="nike95.php">Garanta já o seu! ⟶</a>
         </div>
       </div>
-
-      <section class="header-section">
-        <div class="header-txt">
-          <div class="header-txt-disclaimer">
-            <h1>Nike Air Max 95</h1>
-            <h3>Disponível na BLVCKOUT!</h3>
-          </div>
-          <div class="header-btn">
-            <a href="nike95.html">Garanta já o seu! ⟶</a>
-          </div>
-        </div>
-        <div class="header-img"></div>
-      </section>
-    </header>
+      <div class="header-img"></div>
+    </section>
 
     <section class="itens-section">
       <div class="card-itens">
         <div class="img-box">
-          <a href="sneakers.html">
+          <a href="sneakers.php">
             <img src="Imagens/tenis2.webp" alt="Sneaker"/>
           </a>
         </div>
@@ -182,12 +164,12 @@
     </section>
 
     <section class="prod-section">
-      <h2>LANÇAMENTO</h2>
+      <h2 class="products-title">LANÇAMENTO</h2>
 
       <div class="prod-container">
         <div class="product-card">
           <div class="img-box prod">
-            <a href="nike95.html">
+            <a href="nike95.php">
               <img src="Imagens/prod1.webp" alt="" class="img-default" />
               <img src="Imagens/prod6.webp" alt="" class="img-hover" />
             </a>

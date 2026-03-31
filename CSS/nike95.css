@@ -150,7 +150,7 @@
 
 .mini-img img:hover,
 .mini-img img.active {
-    border: 2px solid red;
+    border: 1px solid #00000011;
 }
 
 .main-img img {
