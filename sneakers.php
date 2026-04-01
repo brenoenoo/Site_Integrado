@@ -1,7 +1,5 @@
 <?php
 include 'data.php';
-// print '<pre>';
-// print_r($produtos_base);
 ?>
 
 <!doctype html>
@@ -48,6 +46,8 @@ include 'data.php';
           }
         ?>
       </div>
+
+      <a href="cadastro_produto" class="add-btn">+</a>
     </main>
 
     <?php require "./partials/footer.php"; ?>
